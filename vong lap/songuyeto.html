@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> so nguyen to </title>
+</head>
+<body>
+<script>
+    let count = 0
+    let i = 2
+    while (count < 20) {
+        if (snt(i)) {
+            document.write(i+ "")
+            count++
+        }
+        i++
+    }
+    function snt(number) {
+        for (let i=2; i<number; i++) {
+            if (number % i ==0) {
+                return false ;
+            }
+        }
+        return true ;
+    }
+</script>
+</body>
+</html>
